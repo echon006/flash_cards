@@ -13,7 +13,7 @@ require './lib/round'
 
 def start
 
-  puts "Welcome to FLASHCARDS~! There are 3 cards."
+  puts "Welcome to FLASHCARDS~!"
   puts "Lets get started"
     until @round.count == 4 do
   puts "Question: #{@round.current_card.question}"
@@ -28,7 +28,10 @@ def start
       @deck.cards.each do |card|
         card.category
       puts "#{card.category} - #{@round.percent_correct_by_category(card.category)}% correct"
+      #I would have liked to make another method to check for dups and only do the each/do per category
+      #but it was not going the way I wanted.
     end
 end
 
 start
+lfhbasiulbciaubcliabvliabvlaibvlaibiluahcvadfbv aeughvs
